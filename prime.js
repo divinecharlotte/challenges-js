@@ -7,7 +7,7 @@ function prime(num) {
           return false;
         }
       }
-      // console.log(num);
+      console.log(num);
       return true;
      
     }

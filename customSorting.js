@@ -1,9 +1,9 @@
-function PrimeNumber(number) {
-    if (number <= 1) {
+function prime(num) {
+    if (num <= 1) {
       return false;
     } else {
-      for (let i = 2; i < number; i++) {
-        if (number % i == 0) {
+      for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
           return false;
         }
       }
@@ -25,7 +25,7 @@ function PrimeNumber(number) {
     }
     let i = 0;
     while (i < arr.length) {
-      if (PrimeNumber(arr[i])) {
+      if (prime(arr[i])) {
         arr.splice(i, 1);
       } else {
         i++;
